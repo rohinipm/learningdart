@@ -4,14 +4,10 @@ void main() {
   runApp(const MyApp());
 }
 
+enum PersonProperties { firstName, lastName, age }
+
 void test() {
-  var names = ['ram', 'sam', 'pam'];
-  print(names.length);
-  names.add('jam');
-  print(names.length);
-  print(names);
-  print(names[0].replaceRange(0, 0, 'gum'));
-  print(names);
+  print(PersonProperties.firstName);
 }
 
 class MyApp extends StatelessWidget {
