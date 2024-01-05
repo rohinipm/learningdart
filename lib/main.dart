@@ -4,14 +4,22 @@ void main() {
   runApp(const MyApp());
 }
 
-class Person {
-  final String name;
-  Person(this.name);
+class livingthings {
+  void printName() {
+    print('I am printing');
+  }
+
+  void breathe() {
+    print("Living things will breathe");
+  }
 }
 
+class cat extends livingthings {}
+
 void test() {
-  final obj = Person('Foo bar');
-  print(obj.name);
+  final obj = livingthings();
+  obj.printName();
+  obj.breathe();
 }
 
 class MyApp extends StatelessWidget {
